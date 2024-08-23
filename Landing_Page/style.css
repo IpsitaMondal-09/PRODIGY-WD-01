@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1280px;
+    margin: auto;
+    z-index: 1;
+   
+}
+.main-head{
+    width: 100%;
+    height: 54px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 9999;
+}
+.main-head.scrolled{
+    position: fixed;
+    background: #fffefe;
+    animation: scrolled .3s forwards;
+}
+
+@keyframes scrolled{
+    from{
+        top: -250px;
+    }
+    to{
+        top: 0;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+.main-head .main-menu{
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-head .main-menu .logo{
+    width: 30%;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+.main-head .main-menu .nav-menu{
+    
+   
+    position: fixed;
+   
+    width: 100%;
+}
+.main-head .main-menu .nav-menu .nav-list{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+   
+    
+}
+.main-head .main-menu .nav-menu .nav-list .nav-list-item{
+    padding: 15px 30px;
+    list-style: none;
+}
+.main-head .main-menu .nav-menu .nav-list .nav-list-item .nav-link{
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(240, 67%, 53%);
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 20px;
+    font-weight: 500px;
+    padding: 18px;
+    
+   
+    transition: all .1s ease;
+}
+
+.main-head.slidedown .main-menu .nav-menu .nav-list .nav-list-item .nav-link {
+    color: #0c0c0c;
+    color: black;
+    transition: all 1s;
+    background-color: rgb(8, 8, 8);
+    border-bottom: 1px solid lightgray;
+}
+.main-head .main-menu .nav-menu .nav-list .nav-list-item .nav-link:hover{
+    color: #ce1a6e;
+    background-color: aliceblue;
+}
+
+
+.showcase{
+    width: 100%;
+    height: 700px;
+    background: url('image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.showcase .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+.showcase .content{
+    text-align: center;
+   
+    padding: 0 200px 0 200px;
+    color: #fff;
+}
+
+
+.showcase .content h2{
+    font-size: 65px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    line-height: 55px;
+    margin-bottom: 10px;
+    
+    
+    color: lightcyan;
+}
+.showcase .content {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.demo-text{
+    width: 100%;
+    padding: 80px 0 80px 0;
+}
+.demo-text .container{
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+    
+}
+.demo-text .container .content{
+    font-size: 22px;
+}
+.demo-text .container .content, .demo-text .container .img{
+    width: 50%;
+   font-size: 22px;
+}
+.demo-text .container .img img{
+    width: 100%;
+    height: 600px;
+    margin-top: 60px;
+}
+.demo-text .container .content{
+    padding: 80px 30px;
+}
+.demo-text .content h2{
+    font-size: 45px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    line-height: 55px;
+    margin-bottom: 10px;
+}
+.demo-text .content p{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+.footer-ele{
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+    background-color: #791761;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .services{
+   height: 300px;
+   color: #ddd;
+   display: flex;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 20px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+  }
